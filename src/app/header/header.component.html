@@ -1,0 +1,9 @@
+<div class="header">
+    <img class="logo" [src]="imageUrl" [alt]="title" [routerLink]="''">
+
+    <button class="menubutton" mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item [routerLink]="'/about'">A propos</button>
+      <button mat-menu-item [routerLink]="'/contact'">Contact</button>
+    </mat-menu>
+</div>

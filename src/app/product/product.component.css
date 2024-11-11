@@ -1,0 +1,13 @@
+.products{
+}
+
+.product-list{
+}
+
+.product{
+    margin: 1rem 2rem;
+    padding: 1rem;
+    /* width: fit-content; */
+    background-color: #fdd90b;
+    align-items: center;
+}
