@@ -1,13 +1,22 @@
-.products{
-}
-
-.product-list{
-}
-
 .product{
     margin: 1rem 2rem;
     padding: 1rem;
     /* width: fit-content; */
     background-color: #fdd90b;
     align-items: center;
+}
+
+.filter{
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.label{
+    font-size: 0.8rem;
+}
+
+.priceTitle{
+    font-size: 1rem;
 }

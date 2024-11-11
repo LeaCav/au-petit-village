@@ -1,29 +1,27 @@
 <div>
   <h1>Nos produits</h1>
 
-  <div class="products">
-      <mat-form-field appearance="fill">
-        <mat-label>Rechercher un produit</mat-label>
-        <input matInput [(ngModel)]="searchQuery" placeholder="Nom du produit" />
-      </mat-form-field>
-    
-      <button mat-icon-button (click)="toggleSortDirection()" aria-label="Sort products">
-        <mat-icon>{{ sortDirection === 'asc' ? 'arrow_upward' : 'arrow_downward' }}</mat-icon>
-        Trier par prix
-      </button>
-    
-    
-    <div class="product-list">
-      <mat-card class="product" *ngFor="let product of products | productFilter: searchQuery | productPrice: sortDirection" > (click)="redirectToProductPage(product)"
-        <mat-card-header>
-          <h2>{{ product.name }}</h2>
-        </mat-card-header>
-        <img mat-card-image [src]="product.image" alt="{{ product.name }}" />
-        <mat-card-content>
-          <strong>{{ product.price | currency }}</strong>
-        </mat-card-content>
-      </mat-card> 
-    </div>
-
+  <div class="filter">
+    <mat-form-field appearance="fill">
+      <mat-label class="label">Rechercher un produit</mat-label>
+      <input matInput [(ngModel)]="searchQuery" placeholder="Nom du produit" />
+    </mat-form-field>
+  
+    <button class="price" mat-icon-button (click)="toggleSortDirection()" aria-label="Sort products" >
+      <mat-icon title="Trier par prix">{{ sortDirection === 'asc' ? 'arrow_upward' : 'arrow_downward' }}</mat-icon>
+    </button>
+  </div>
+ 
+  <div class="product-list">
+    <mat-card class="product" *ngFor="let product of products | productFilter: searchQuery | productPrice: sortDirection" > 
+      <!-- (click)="redirectToProductPage(product)" -->
+      <mat-card-header>
+        <h2>{{ product.name }}</h2>
+      </mat-card-header>
+      <img mat-card-image [src]="product.image" alt="{{ product.name }}" />
+      <mat-card-content>
+        <strong>{{ product.price | currency }}</strong>
+      </mat-card-content>
+    </mat-card> 
   </div>
 </div>
