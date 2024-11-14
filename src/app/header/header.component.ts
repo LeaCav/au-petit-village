@@ -7,11 +7,14 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatMenuModule, MatButtonModule, CommonModule, RouterModule],
+  imports: [MatMenuModule,
+            MatButtonModule,
+            CommonModule,
+            RouterModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit {
   imageUrl!: string;
   title!: string;
   
