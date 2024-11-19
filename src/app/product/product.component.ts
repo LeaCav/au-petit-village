@@ -21,6 +21,7 @@ interface Product {
   price: number;
   image: string;
   description: string;
+  link: string;
 }
 
 @Component({
@@ -46,9 +47,9 @@ export class ProductComponent{
   dialog= inject(MatDialog);
 
   products: Product[] = [
-    {name: 'Astérix', price: 55, image: '/img/asterix.jpg', description: ''},
-    {name: 'Obélix', price: 50, image: '/img/obelix.jpg', description: ''},
-    {name: 'Panoramix', price: 45, image: '/img/panoramix.jpg', description: ''},
+    {name: 'Astérix', price: 55, image: '/img/asterix.jpg', description: '', link: '/Asterix'},
+    {name: 'Obélix', price: 50, image: '/img/obelix.jpg', description: '', link: '/Obelix'},
+    {name: 'Panoramix', price: 45, image: '/img/panoramix.jpg', description: '', link: '/Panoramix'},
   ];
 
   searchQuery: string = '';
