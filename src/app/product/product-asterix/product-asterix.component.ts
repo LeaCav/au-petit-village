@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-product-asterix',
@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
   templateUrl: './product-asterix.component.html',
   styleUrl: './product-asterix.component.css'
 })
-export class ProductAsterixComponent {
+export class ProductAsterixComponent implements OnInit{
+
+  imageUrl!: string;
+  title!: string;
+
+  ngOnInit(): void {
+    this.imageUrl= '/img/asterix.jpg';
+    this.title= "Figurine d'Astérix";
+  }
 
 }

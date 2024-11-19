@@ -47,9 +47,9 @@ export class ProductComponent{
   dialog= inject(MatDialog);
 
   products: Product[] = [
-    {name: 'Astérix', price: 55, image: '/img/asterix.jpg', description: '', link: '/Asterix'},
-    {name: 'Obélix', price: 50, image: '/img/obelix.jpg', description: '', link: '/Obelix'},
-    {name: 'Panoramix', price: 45, image: '/img/panoramix.jpg', description: '', link: '/Panoramix'},
+    {name: 'Astérix', price: 50, image: '/img/asterix.jpg', description: 'Figurine unique d\'\Astérix ', link: '/Asterix'},
+    {name: 'Obélix', price: 55, image: '/img/obelix.jpg', description: 'Figurine unique d\'\Obélix', link: '/Obelix'},
+    {name: 'Panoramix', price: 45, image: '/img/panoramix.jpg', description: 'Figurine unique de Panoramix', link: '/Panoramix'},
   ];
 
   searchQuery: string = '';

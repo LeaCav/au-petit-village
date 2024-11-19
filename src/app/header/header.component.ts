@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.imageUrlLogo = '/img/Logo.jpg';
     this.titleLogo = 'Accueil';
-    this.imageUrlIdefix= '/img/idefix.png'
-    this.titleIdefix= 'en avant!'
+    this.imageUrlIdefix= '/img/idefix.png';
+    this.titleIdefix= 'en avant!';
   } 
 }

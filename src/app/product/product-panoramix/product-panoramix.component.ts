@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-product-panoramix',
@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
   templateUrl: './product-panoramix.component.html',
   styleUrl: './product-panoramix.component.css'
 })
-export class ProductPanoramixComponent {
+export class ProductPanoramixComponent implements OnInit{
+
+  imageUrl!: string;
+  title!: string;
+
+  ngOnInit(): void {
+    this.imageUrl= '/img/panoramix.jpg';
+    this.title= "Figurine de Panoramix";
+  }
 
 }
