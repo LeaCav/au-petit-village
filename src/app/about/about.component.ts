@@ -13,7 +13,7 @@ export class AboutComponent implements OnInit {
 
 
 ngOnInit(): void {
-  this.imageUrl = '/au-petit-village/public/img/brothers.jpg';
+  this.imageUrl = '/img/brothers.jpg';
     this.title = 'Pierrick et Anthony';
   }
 }

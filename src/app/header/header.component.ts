@@ -17,11 +17,15 @@ import { MatMenuTrigger } from '@angular/material/menu';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  imageUrl!: string;
-  title!: string;
+  imageUrlLogo!: string;
+  titleLogo!: string;
+  imageUrlIdefix!: string;
+  titleIdefix!: string;
   
   ngOnInit(): void {
-    this.imageUrl = '/au-petit-village/public/img/Logo.jpg';
-    this.title = 'Logo';
-  }
+    this.imageUrlLogo = '/img/Logo.jpg';
+    this.titleLogo = 'Accueil';
+    this.imageUrlIdefix= '/img/idefix.png'
+    this.titleIdefix= 'en avant!'
+  } 
 }

@@ -18,10 +18,10 @@ export class FooterComponent implements OnInit{
 
   ngOnInit(): void {
     this.facebookUrl = 'https://www.facebook.com/';
-    this.facebookImageUrl = '../public/img/facebook.png';
+    this.facebookImageUrl = '/img/facebook.png';
     this.facebookTitle = 'Facebook';
     this.instagramUrl = 'https://www.instagram.com/';
-    this.instagramImageUrl = '../public/img/instagram.png';
+    this.instagramImageUrl = '/img/instagram.png';
     this.instagramTitle = 'Instagram';
   }
 

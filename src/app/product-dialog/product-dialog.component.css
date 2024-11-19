@@ -1,0 +1,14 @@
+.matDialog{
+    padding: 10px;
+    background-color: #da001e;
+}
+
+button{
+    background-color: #fdd90b;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+   background-color: rgba(255, 218, 10, 0.8); 
+}

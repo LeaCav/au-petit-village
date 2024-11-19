@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogActions } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogActions, MatDialogClose } from '@angular/material/dialog';
 import { MatDialogContent } from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 
@@ -17,7 +17,8 @@ interface Product {
   styleUrls: ['./product-dialog.component.css'],
   imports: [MatDialogContent,
             MatDialogActions,
-            CommonModule
+            CommonModule,
+            MatDialogClose,
   ]
 })
 export class ProductDialogComponent {

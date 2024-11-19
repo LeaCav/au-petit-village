@@ -5,7 +5,6 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { AccueilComponent } from './accueil/accueil.component';
 
 
 @Component({
@@ -17,7 +16,6 @@ import { AccueilComponent } from './accueil/accueil.component';
             MatButtonModule,
             HeaderComponent,
             FooterComponent,
-            AccueilComponent,
           ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],

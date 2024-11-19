@@ -1,12 +1,32 @@
 .header{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
 }
 
 .logo{
     text-align: center;
-    margin: 0.5rem;
+    width: 150px;
+}
+.idefix{
+    width: 150px;
+    position: absolute;
+    top: 100px;
+    left: 600px;
+    opacity: 0;
+}
+
+.imgLogo:hover{
+    .idefix{
+        opacity: 1;
+    }
+    
+}
+
+.divMenubutton{
+    width: 100%;
+    display: flex;
+    align-items: start;
 }
 
 .menubutton{

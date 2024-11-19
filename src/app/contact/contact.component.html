@@ -1,1 +1,41 @@
-<p>contact works!</p>
+<div>
+  <h1>Contact</h1>
+
+  <div class="contactMain">
+    <div class="contactForm">
+      <table class="tableName" cellspacing="0"><tr>
+        <td><mat-form-field>
+          <mat-label>Prénom</mat-label>
+          <input matInput disabled="isDisabled">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Nom</mat-label>
+          <input matInput disabled="isDisabled">
+        </mat-form-field></td>
+      </tr></table>
+  
+        <form class="email">
+            <mat-form-field >
+              <mat-label>Email</mat-label>
+              <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+              @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                <mat-error>Adresse mail invalide</mat-error>
+              }
+              @if (emailFormControl.hasError('required')) {
+                <mat-error>adresse mail invalide</mat-error>
+              }
+            </mat-form-field>
+          </form>
+  
+          <form class="message">
+            <mat-form-field class="matFormMessage">
+              <mat-label>Message</mat-label>
+              <input matInput disabled="isDisabled" #message maxlength="256" placeholder="Ex. I need help with...">
+            </mat-form-field>
+          </form>
+    </div>
+    
+    <img [src]="imageUrl" [alt]="title">
+
+  </div>   
+</div>
