@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
+  imageUrl!: string;
+  title!: string;
 
+
+ngOnInit(): void {
+  this.imageUrl = '/au-petit-village/public/img/brothers.jpg';
+    this.title = 'Pierrick et Anthony';
+  }
 }

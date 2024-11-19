@@ -3,11 +3,13 @@ import {MatMenuModule} from '@angular/material/menu';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
+import { MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [MatMenuModule,
+            MatMenuTrigger,
             MatButtonModule,
             CommonModule,
             RouterModule],
@@ -20,6 +22,6 @@ export class HeaderComponent implements OnInit {
   
   ngOnInit(): void {
     this.imageUrl = '/au-petit-village/public/img/Logo.jpg';
-    this.title = 'Logo'; 
+    this.title = 'Logo';
   }
 }
