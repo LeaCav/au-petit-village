@@ -1,0 +1,13 @@
+<div>
+    <h1>{{data.name}}</h1>
+    <div>
+        <img [src]="data.image" alt="{{ data.name }}">
+        <div>
+            <p> <strong>Prix :</strong> {{data.price}}€</p>
+            <p>
+                <strong>Description :</strong> {{data.description}} <br>
+                <strong>Taille :</strong> {{data.size || 'Non spécifiée'}} cm
+            </p>
+        </div>
+    </div>
+</div>

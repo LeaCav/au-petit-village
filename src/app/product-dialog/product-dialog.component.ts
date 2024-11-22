@@ -4,26 +4,22 @@ import { MatDialogContent } from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-interface Product {
-  name: string;
-  price: number;
-  image: string;
-  description: string;
-  link: string;
-}
+import { ProductsService } from '../product/products.service';
 
 @Component({
   selector: 'app-product-dialog',
   standalone: true,
-  templateUrl: './product-dialog.component.html',
-  styleUrls: ['./product-dialog.component.css'],
   imports: [MatDialogContent,
-            MatDialogActions,
-            CommonModule,
-            MatDialogClose,
-            RouterModule,
-  ]
+    MatDialogActions,
+    CommonModule,
+    MatDialogClose,
+    RouterModule,
+],
+  templateUrl: './product-dialog.component.html',
+  styleUrls: ['./product-dialog.component.css']
+
 })
 export class ProductDialogComponent {
-  data = inject(MAT_DIALOG_DATA) as Product; 
+  data = inject(MAT_DIALOG_DATA);
+  productService = inject(ProductsService) 
 }

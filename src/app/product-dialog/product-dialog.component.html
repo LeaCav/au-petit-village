@@ -2,9 +2,9 @@
   <h2 mat-dialog-title>{{ data.name }}</h2>
   <mat-dialog-content>
     <img [src]="data.image" alt="{{ data.name }}" style="max-width: 100%; height: auto;" />
-    <p><strong>Prix :</strong> {{ data.price | currency }}</p>
-    <p><strong>Description :</strong> {{ data.description }}</p>
-    <button mat-button [routerLink]="data.link" mat-dialog-close>Boutique</button>
+    <p><strong>Prix :</strong> {{ data.price | currency: 'EUR' }}</p>
+    <p><strong>Description :</strong> {{ data.smallDesc }}</p>
+    <button mat-button [routerLink]="['/detail', data.name]" mat-dialog-close>Détails</button>
   </mat-dialog-content>
   <mat-dialog-actions>
     <button mat-button mat-dialog-close>Fermer</button>

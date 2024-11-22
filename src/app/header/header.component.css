@@ -6,10 +6,12 @@
 
 .logo{
     text-align: center;
-    width: 150px;
+    width: 9.5rem;
+    border-radius: 50%;
 }
 .idefix{
-    width: 150px;
+    margin: auto;
+    width: 9.5rem;
     position: absolute;
     top: 100px;
     left: 600px;
@@ -20,7 +22,22 @@
     .idefix{
         opacity: 1;
     }
+}
+
+
+@media (max-width: 788px) {
     
+    .idefix {
+        top: 10%;
+        left: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .idefix {
+        top: 18%;
+        left: 20%;
+    }
 }
 
 .divMenubutton{

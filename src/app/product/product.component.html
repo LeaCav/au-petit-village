@@ -20,7 +20,7 @@
           </mat-card-header>
           <img mat-card-image [src]="product.image" alt="{{ product.name }}" />
           <mat-card-content>
-            <strong>{{ product.price | currency }}</strong>
+            <strong>{{ product.price | currency: 'EUR' }}</strong>
           </mat-card-content>
         </mat-card>
     </div> 
